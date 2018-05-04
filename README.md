@@ -6,10 +6,6 @@ I am still maintaining v1.0 of this site, which can be found at the link below!
 
 http://www.theorientkelowna.com/  
 
-## Objectives
-- a more responsive and cohesive design
-- less HTML / CSS clutter
-
 ## Materials
 - HTML / CSS
 - JavaScript (eventually!)
