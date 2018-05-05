@@ -1,6 +1,8 @@
-
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* 
+----------------
+-- INDEX PAGE --
+----------------
+*/
 
 body {
 	text-align: center;
@@ -11,6 +13,7 @@ body {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* MAIN TITLE */
 
 #main {
 	font-family: 'Julius Sans One', sans-serif;
@@ -30,6 +33,7 @@ body {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* MAIN MENU */
 
 .menu {
 	margin-top: 30px;
@@ -60,6 +64,7 @@ body {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* INTRO SECTION */
 
 #intro {
 	margin: 60px auto 50px auto;
@@ -73,37 +78,40 @@ body {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* ABOUT US SECTION (blurb) */
+
 
 #aboutus {
-	margin: 70px auto;
-	width: 50%;
-	height: 165px;
+	margin: 60px auto;
+	width: 40%;
 	background-color: #DDDDDD;
 	border: 10px double white;
 	display: flex;
 	flex-direction: column;
 }
 
-
 #title {
 	order: 1;
 	margin: -25px auto 0px auto;
-	width: 300px;
+	padding: 0px 20px;
 	font-family: 'Julius Sans One', sans-serif;
 	border: 1px solid #FFAF35;
 	background-color: white;
 }
 
+
 #blurb {
 	order: 2;
-	width: 80%;
-	margin: 5px auto 0px auto;
+	display: inline-block;
+	margin: 20px;
+	padding: 0px 15px;
 	font-size: 14px;
 	line-height: 1.7;
 }
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* SERVICE CARDS SECTION */
 
 .services {
 	display: flex;
@@ -117,6 +125,7 @@ body {
 	width: 340px;
 	margin: 0px auto;
 	border: 1px solid #DDDDDD;
+	flex-basis: auto;
 }
 
 .service-icon {
@@ -139,19 +148,19 @@ body {
 }
 
 .services p {
-	display: block;
 	padding: 5px 30px;
 	height: 75px;
 	font-size: 14px;
+	line-height: 1.7;
 }
 
 .services form{
-	height: 50px;
-	margin-top: 20px;
+	height: 40px;
+	margin-top: 30px;
 }
 
 .services button{
-	height: 40px;
+	height: 100%;
 	width: 60%;
 	border: 1px solid #818181;
 	border-radius: 5px;
@@ -168,6 +177,7 @@ body {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* RESTAURANT INFO SECTION */
 
 .infosection {
 	margin: 50px auto 30px auto;
@@ -186,7 +196,7 @@ body {
 .info {
 	order: 2;
 	margin: 5px auto 0px auto;
-	width: 60%;
+	padding: 30px 50px;
 	border: 10px double white;
 	font-family: 'Julius Sans One', sans-serif;
 }
@@ -214,6 +224,7 @@ body {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* FOOTER + FOOTER MENU*/
 
 .footer.menu {
 	display: inline-block;
@@ -234,8 +245,79 @@ body {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* SCREEN-SIZE ADJUSTMENTS */
 
-/* small screens */
-@media only screen and (max-width: 768px){
-	
+/* intermediate screen size */
+@media (max-width:910px){
+
+	#intro span{
+		display: none;
+	}
+
+	#aboutus {
+		width: 80%;
+	}
+
+	.services {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+	.service-card {
+		margin-top: 70px;
+		width: 80%;
+		border: none;
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	#first-card {
+		margin-top: 0px;
+	}
+
+	.services form {
+		margin-top: 10px;
+		margin-bottom: 35px;
+	}
+
+	.services button {
+		width: 40%;
+	}
 }
+
+/* small screen size */
+@media (max-width: 518px){
+
+	#main h1 {
+		font-size: 95px;
+	}
+
+	.menu {
+		margin-top: 50px;
+		line-height: 1.7;
+	}
+
+	#intro {
+		margin-top: 55px;
+	}
+
+	#intro h1 {
+		font-size: 30px;
+	}
+
+	.service-card form {
+		margin-top: 30px;
+	}
+
+	.service-card button {
+		width: 80%;
+	}
+
+	.footer.menu {
+		padding-top: 20px;
+		border: none;
+		border-top: 1px solid #FFAF35;
+		border-bottom: 1px solid #FFAF35;
+	}
+}
+
