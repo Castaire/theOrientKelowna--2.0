@@ -1,4 +1,4 @@
-/* 
+/*_________________________________________________
 ----------------
 -- INDEX PAGE --
 ----------------
@@ -111,7 +111,7 @@ body {
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* SERVICE CARDS SECTION */
+/* SERVICE CARDS SECTION (lunch, takeout, delivery cards) */
 
 .services {
 	display: flex;
@@ -177,7 +177,7 @@ body {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* RESTAURANT INFO SECTION */
+/* INFO SECTION (hours, phone, contact) */
 
 .infosection {
 	margin: 50px auto 30px auto;
@@ -185,6 +185,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-color: #DDDDDD;
+	line-height: 1;
 }
 
 .infosection .title {
@@ -196,7 +197,7 @@ body {
 .info {
 	order: 2;
 	margin: 5px auto 0px auto;
-	padding: 30px 50px;
+	padding: 20px 100px;
 	border: 10px double white;
 	font-family: 'Julius Sans One', sans-serif;
 }
@@ -204,6 +205,12 @@ body {
 .info p{
 	margin: 10px;
 	font-size: 17px;
+}
+
+.info h1{
+	font-size: 38px;
+	color: #333333;
+	line-height: 1.7;
 }
 
 .infosection img {
@@ -244,12 +251,45 @@ body {
 	text-decoration: none;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/* SCREEN-SIZE ADJUSTMENTS */
+
+/* ________________________________________________
+------------------
+-- CONTACT PAGE --
+------------------
+*/
+
+#mapper {
+		position: relative;
+		width: 55%;
+		height: 230px;
+		overflow: hidden;
+		padding-bottom: 15%;
+		margin: 60px auto;
+		border: 10px dashed #DDDDDD;
+}
+
+#mapper iframe{
+	position: absolute;
+	left: 3%;
+	top: 5%;
+	height: 90%;
+	width: 94%;
+}
+
+
+
+
+
+
+/*_________________________________________________
+SCREEN-SIZE ADJUSTMENTS */
 
 /* intermediate screen size */
 @media (max-width:910px){
 
+	/* 
+	-- INDEX PAGE ---------------------------------
+	*/
 	#intro span{
 		display: none;
 	}
@@ -283,11 +323,28 @@ body {
 	.services button {
 		width: 40%;
 	}
+
+	.info {
+		padding: 30px 60px;
+	}
+
+	/* 
+	-- CONTACT PAGE ---------------------------------
+	*/
+
+	#mapper {
+		width: 80%;
+		height: 270px;
+	}
 }
+
 
 /* small screen size */
 @media (max-width: 518px){
 
+	/*
+	-- HOME PAGE ----------------------------------
+	*/
 	#main h1 {
 		font-size: 95px;
 	}
@@ -313,11 +370,34 @@ body {
 		width: 80%;
 	}
 
+	.info {
+		padding: 30px;
+		border-left: none;
+		border-right: none;
+	}
+
 	.footer.menu {
 		padding-top: 20px;
 		border: none;
 		border-top: 1px solid #FFAF35;
 		border-bottom: 1px solid #FFAF35;
 	}
+
+	/*
+	-- CONTACT PAGE -------------------------------
+	*/
+
+	#mapper {
+		margin-top: 50px;
+		border: 5px dashed #DDDDDD;
+		width: 90%;
+	}
 }
+
+
+
+
+
+
+
 
