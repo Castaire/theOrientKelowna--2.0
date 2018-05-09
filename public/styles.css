@@ -159,7 +159,7 @@ body {
 	margin-top: 30px;
 }
 
-.services button{
+button{
 	height: 100%;
 	width: 60%;
 	border: 1px solid #818181;
@@ -169,7 +169,7 @@ body {
 	letter-spacing: 0.05em;
 }
 
-.services button:hover {
+button:hover {
 	transition-duration: 0.5s;
 	border-color: #333333;
 	background-color: #333333;
@@ -188,7 +188,7 @@ body {
 	line-height: 1;
 }
 
-.infosection .title {
+.title {
 	margin: 20px auto;
 	border: 1px solid #818181;
 	width: 280px;
@@ -241,6 +241,10 @@ body {
 	border: 1px solid #FFAF35;
 }
 
+.finalnote {
+	margin-bottom: 25px;
+}
+
 .finalnote p {
 	color: #818181;
 	font-size: 12px;
@@ -250,7 +254,6 @@ body {
 	color: #818181;
 	text-decoration: none;
 }
-
 
 /* ________________________________________________
 ------------------
@@ -276,9 +279,58 @@ body {
 	width: 94%;
 }
 
+/* ________________________________________________
+------------------------
+-- NOTE-related PAGES --
+------------------------
+*/
 
+.forminfo {
+	margin: 60px auto 25px auto;
+	width: 70%;
+	padding: 15px;
+	background-color: #EEEEEE;
+	border: 10px double white;
+	line-height: 1.7;
+}
 
+.forminfo .title {
+	border-color: #FFAF35;
+	margin-bottom: 30px;
+}
 
+form {
+	margin: 0px auto 30px auto;
+	text-align: center;
+}
+
+.formtext {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 60%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	outline: none;
+	border: 1px solid #818181;
+	padding: 10px;
+}
+
+.formtext:focus {
+	outline: none;
+	border: 1px solid #FFAF35;
+	box-shadow: 0 0 1px #FFAF35;
+}
+
+/* 'name' input for form */
+form input:nth-child(3){
+	width: 30%;
+}
+
+form button {
+	width: 25%;
+	padding: 15px 0px;
+}
 
 
 /*_________________________________________________
@@ -320,7 +372,7 @@ SCREEN-SIZE ADJUSTMENTS */
 		margin-bottom: 35px;
 	}
 
-	.services button {
+	button {
 		width: 40%;
 	}
 
@@ -329,13 +381,37 @@ SCREEN-SIZE ADJUSTMENTS */
 	}
 
 	/* 
-	-- CONTACT PAGE ---------------------------------
+	-- CONTACT PAGE -------------------------------
 	*/
 
 	#mapper {
 		width: 80%;
 		height: 270px;
 	}
+
+	/* 
+	-- NOTE-related PAGES -------------------------
+	*/
+
+	.forminfo {
+		margin-top: 40px;
+		font-size: 14px;
+	}
+
+	.formtext {
+		width: 85%;
+		font-size: 14px;
+	}
+
+	/* 'name' input for form */
+	form input:nth-child(3){
+		width: 45%;
+	}
+
+	form button {
+		width: 40%;
+	}
+
 }
 
 
@@ -366,7 +442,7 @@ SCREEN-SIZE ADJUSTMENTS */
 		margin-top: 30px;
 	}
 
-	.service-card button {
+	button {
 		width: 80%;
 	}
 
@@ -391,6 +467,19 @@ SCREEN-SIZE ADJUSTMENTS */
 		margin-top: 50px;
 		border: 5px dashed #DDDDDD;
 		width: 90%;
+	}
+
+	/*
+	-- NOTE-related PAGES -------------------------
+	*/
+
+	.forminfo {
+		width: 90%;
+		padding: 10px;
+	}
+
+	.formtext {
+		width: 95%;
 	}
 }
 

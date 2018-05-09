@@ -4,13 +4,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" text="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet" text="text/css">
-
+	
 	<link href="styles.css" rel="stylesheet" type="text/css">
-	<title>CONTACT</title>
+	<script src="loose-scripts.js"></script>
+	<title>THE ORIENT</title>
 </head>
 <body>
 	<div id="main">
-		<p>[ CONTACT ]</p>
+		<p>EST. 1978</p>
 		<h1>THE ORIENT</h1>
 	</div>
 	<div class="menu">
@@ -22,27 +23,25 @@
 			<a href="note.html"><li>NOTE</li></a>
 		</ul>
 	</div>
-	<div id="mapper">
-		<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCnbZqKCl8EOFnamzdPlYozkHeQClDx1aU&q=place_id:ChIJr5iQbU-LfVMRoyszKl1bxqs" allowfullscreen></iframe>
-	</div>
-	<div class="infosection">
-		<div class="title" style="border-color: white;"><p>CONTACT</p></div>
-		<div class="info" style="margin-bottom: 25px;">
-			<h1>THE ORIENT ON PANDOSY</h1>
-			<p> #101 - 2689 Pandosy Street </p>
-			<br>
-			<p><b> OPEN EVERYDAY </b></p>
-			<p>mon-fri : 11AM - 9PM</p>
-			<p>sat-sun : 12PM - 9PM</p>
-			<br>
-			<p><b> HOLIDAY HOURS </b></p>
-			<p> 4PM - 9PM </p>
-			<br>
-			<p><b>250-763-2988 &nbsp;</b>//<b>&nbsp; 250-763-2986</b></p>
-			<br>
+	<div class="forminfo">
+		<div class="title">
+			<p>HELLO AGAIN</p>
 		</div>
+		<p>
+		this is the place to send us a quick anonymous note regarding almost anything.<br>
+		any feedback, suggestions, and bad puns are appreciated<br><br>
+		THANKS FOR VISITING US TODAY!
+		</p>
 	</div>
-		<div class="footer menu">
+	<form action="https://fncontact.com/THEORI/post" method="post">
+		<input type="hidden" name="url_success" value="http://theorientkelowna.com/afternote.html" /> 
+		<input type="hidden" name="url_error" value="http://theorientkelowna.com/nonafternote.html"/>
+		<input class="formtext" type="text" name="name" placeholder="[ name here ]" style="margin-bottom: 15px;"/>
+		<br>
+		<textarea class="formtext" name="message" rows="9" cols="80" class="input" placeholder="[ type type typing ... ]" style="margin-bottom: 10px;" required></textarea><br>
+		<button type="submit">SEND ME!</button>
+	</form>
+	<div class="footer menu">
 		<ul>
 			<a href="index.html"><li>HOME</li></a>
 			<a href=""><li>LUNCH SPECIAL</li></a>
@@ -55,3 +54,4 @@
 		<p>Copyright &copy; 2018 The Orient Restaurant . All rights reserved . Icons designed by <a href="https://www.flaticon.com">Flaticon</a></p>
 	</div>
 </body>
+</html>
