@@ -213,15 +213,9 @@ button:hover {
 	line-height: 1.7;
 }
 
-.infosection img {
+a#contact-icon {
 	order: 3;
-	margin: 20px auto;
-	height: 40px;
-	border: 1px solid red;
-}
-
-.infosection a {
-	order: 3; 
+	display: block;
 	margin: 20px auto;
 	height: 40px;
 	width: 40px;
@@ -229,6 +223,14 @@ button:hover {
 	background-size: 40px;
 	background-repeat: no-repeat;
 }
+
+.phone a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* FOOTER + FOOTER MENU*/
@@ -323,11 +325,11 @@ form {
 }
 
 /* 'name' input for form */
-form input:nth-child(3){
+#note-form input:nth-child(3){
 	width: 30%;
 }
 
-form button {
+#note-form button {
 	width: 25%;
 	padding: 15px 0px;
 }
@@ -380,6 +382,10 @@ SCREEN-SIZE ADJUSTMENTS */
 		padding: 30px 60px;
 	}
 
+	.finalnote p {
+		font-size: 10px;
+	}
+
 	/* 
 	-- CONTACT PAGE -------------------------------
 	*/
@@ -404,11 +410,11 @@ SCREEN-SIZE ADJUSTMENTS */
 	}
 
 	/* 'name' input for form */
-	form input:nth-child(3){
+	#note-form input:nth-child(3){
 		width: 45%;
 	}
 
-	form button {
+	#note-form button {
 		width: 40%;
 	}
 
@@ -457,6 +463,10 @@ SCREEN-SIZE ADJUSTMENTS */
 		border: none;
 		border-top: 1px solid #FFAF35;
 		border-bottom: 1px solid #FFAF35;
+	}
+
+	.finalnote p {
+		padding: 0px 10px;
 	}
 
 	/*
