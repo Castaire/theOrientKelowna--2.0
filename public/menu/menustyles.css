@@ -80,6 +80,15 @@
 	font-family: 'Julius Sans One', sans-serif;
 }
 
+/* only for COMBOS and FAMILY DINNER menus */
+p#etc {
+	margin: 50px auto 0px auto;
+	padding: 5px 10px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+
 .column {
 	display: inline-block;
 	width: 45%;
@@ -133,5 +142,28 @@
 	line-height: 180%;
 }
 
+/* only for COMBO menu */
+p.combo {
+	line-height: 1.2;
+}
+
+.combo.item p {
+	line-height: 200%;
+}
+
+/* only for FAMILY DINNER menu */
+p.family.desc{
+	line-height: 1.8;
+}
+
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
