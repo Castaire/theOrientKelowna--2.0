@@ -217,10 +217,10 @@ a#contact-icon {
 	order: 3;
 	display: block;
 	margin: 20px auto;
-	height: 40px;
-	width: 40px;
-	background-image: url('../res/icons/svg/018-map-marker.svg');
-	background-size: 40px;
+	height: 60px;
+	width: 60px;
+	background-image: url('../res/icons/svg/012-location.svg');
+	background-size: 60px;
 	background-repeat: no-repeat;
 }
 
@@ -288,7 +288,7 @@ a#contact-icon {
 */
 
 .forminfo {
-	margin: 60px auto 25px auto;
+	margin: 75px auto 25px auto;
 	width: 70%;
 	padding: 15px;
 	background-color: #EEEEEE;
@@ -300,6 +300,13 @@ a#contact-icon {
 	border-color: #FFAF35;
 	margin-bottom: 30px;
 }
+
+.forminfo .service-icon {
+	margin-top: -63px;
+	background-size: 50px;
+	background-position: 60%;
+}
+
 
 form {
 	margin: 0px auto 30px auto;
@@ -400,7 +407,7 @@ SCREEN-SIZE ADJUSTMENTS */
 	*/
 
 	.forminfo {
-		margin-top: 40px;
+		margin-top: 70px;
 		font-size: 14px;
 	}
 
