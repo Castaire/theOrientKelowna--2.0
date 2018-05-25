@@ -7,7 +7,6 @@
 
 	<link href="menustyles.css" rel="stylesheet" type="text/css">
 	<link href="../styles.css" rel="stylesheet" type="text/css">
-	<script src="loose-scripts.js"></script>
 	<title>THE ORIENT</title>
 </head>
 <body>
@@ -41,7 +40,9 @@
 			<a href="combos.html"><li>COMBOS</li></a>
 		</ul>
 	</div>
-	<div class="suboptions menu" style="margin-top: 45px;">
+	<div class="suboptions menu">
+		<input type="checkbox" id="menu-toggle" />
+			<label for="menu-toggle" class="label-toggle"></label>
 		<ul>
 			<a href="appetizers+soup.html">
 				<li> APPETIZERS + SOUP </li></a>
@@ -63,7 +64,6 @@
 	<div id="contentAS">
 		<section class="content">
 			<h1> CHOP SUEY </h1>
-
 			<div class="column">
 				<div class="item">
 					<p>HOUSE SPECIAL CHOP SUEY <span>$12.95</span></p>
@@ -78,13 +78,13 @@
 					<p>BEEF CHOW BROCOLLI <span>$11.50</span></p>
 					<p class="desc">stir-fried brocolli and beef, with carrots and onions. a popular classic </p>
 				</div>
-				<div class="item" style="border: none;">
+				<div class="item last">
 					<p>ALMOND GAI DING <span>$12.95</span></p>
 					<p class="desc">stir-fried diced chicken with almonds and assorted veggies</p>
 				</div>
 			</div>
 
-			<div class="column" style="float: right;">
+			<div class="column">
 				<div class="item">
 					<p>TOMATO SAUCE CHOP SUEY <span>$12.50</span></p>
 					<p class="desc"><strong> choose one: BEEF / CHICKEN / SHRIMP </strong> <br><br>
@@ -100,14 +100,14 @@
 					<p class="desc"><strong> choose one: BEEF / CHICKEN / SHRIMP / SQUID </strong> <br><br>
 					stif-fried snow peas + topping of choice + assorted veggies </p>
 				</div>
-				<div class="item" style="border:none;">
+				<div class="item last">
 					<p> BEEF &amp; GREEN PEPPERS w/ BLACK BEAN SAUCE <span>$11.50</span></p>
 					<p class="desc">beef + green peppers stir-fried with carrots and onions in a black bean sauce </p>
 				</div>
 			</div>
 		</section>
 
-		<section class="content" style="margin-top: 130px;">
+		<section class="content">
 			<h1> EGG FOO YUNG </h1>
 
 			<div class="column">
@@ -116,7 +116,7 @@
 					<p class="desc">pan-fried egg pancakes with shrimp, pork, chicken, and assorted veggies </p>
 				</div>
 			</div>
-			<div class="column" style="float: right;">
+			<div class="column">
 				<div class="item" style="border:none;">
 					<p>EGG FOO YUNG <span>$10.95</span></p>
 					<p class="desc">pan-fried egg pancake + topping of choice </p>

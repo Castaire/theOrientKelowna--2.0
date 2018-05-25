@@ -351,6 +351,12 @@ SCREEN-SIZE ADJUSTMENTS */
 	/* 
 	-- INDEX PAGE ---------------------------------
 	*/
+
+	.menu {
+		line-height: 2.5;
+	}
+
+
 	#intro span{
 		display: none;
 	}
@@ -440,7 +446,7 @@ SCREEN-SIZE ADJUSTMENTS */
 
 	.menu {
 		margin-top: 50px;
-		line-height: 1.7;
+		line-height: 2.3;
 	}
 
 	#intro {

@@ -35,38 +35,47 @@
 	font-weight: normal;
 }
 
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.suboptions.menu a {
-	margin: 5px;
-	padding: 10px 0px;
-	transition: border 0.15s ease-in-out;
+.suboptions.menu {
+	margin-top: 50px;
+	line-height: 1.5;
 }
 
-.suboptions.menu a:hover {
-	margin-bottom: 8px;
-	border-bottom: 8px solid #FFAF35;
-	color: #333333;
+.suboptions.menu ul {
+	margin: auto;
+	height: 78px;
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	transition: all 1s ease-in-out;
 }
 
 .suboptions.menu li {
-	width: 100%;
-	margin: 0px;
+	display: inline-block;
+	border: 1px solid #DDDDDD;
+	margin: 15px 5px;
+	padding: 10px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
 	letter-spacing: 0px;
-	padding: 10px;
-	border: 1px solid #DDDDDD;
+	transition: border 0.15s ease-in-out;
 }
 
 .suboptions.menu li:hover {
 	border-color: #FFAF35;
-	border-bottom: none;
+	border-bottom: 8px solid #FFAF35;
 }
 
+.suboptions.menu a:hover {
+	color: #333333;
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#menu-toggle { display: none; }
+
+.label-toggle { display: none; }
 
 .menu.title {
 	margin: 55px auto 0px auto;
@@ -76,7 +85,8 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 #contentAS {
-	margin: 50px 100px;
+	width: 80%;
+	margin: 50px auto;
 	font-family: 'Julius Sans One', sans-serif;
 }
 
@@ -94,9 +104,17 @@ p#etc {
 	width: 45%;
 }
 
+.column:nth-child(2n){
+	float: right;
+}
+
 .content {
 	text-align: left;
 	margin-top: 30px;
+}
+
+.content:nth-child(2){
+	margin-top: 80px;
 }
 
 .content h1 {
@@ -118,6 +136,11 @@ p#etc {
 	font-family: 'Oswald', sans-serif;
 	letter-spacing: 0.08em;
 	font-size: 15px;
+	white-space: nowrap;
+}
+
+.item p.desc {
+	white-space: normal;
 }
 
 .desc {
@@ -126,6 +149,7 @@ p#etc {
 }
 
 .item span {
+	display: block;
 	float: right;
 }
 
@@ -139,7 +163,11 @@ p#etc {
 }
 
 .item li {
-	line-height: 180%;
+	line-height: 1.8;
+}
+
+.item.last {
+	border-bottom: none;
 }
 
 /* only for COMBO menu */
@@ -148,7 +176,7 @@ p.combo {
 }
 
 .combo.item p {
-	line-height: 200%;
+	line-height: 2.0;
 }
 
 /* only for FAMILY DINNER menu */
@@ -157,13 +185,98 @@ p.family.desc{
 }
 
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*_________________________________________________
+SCREEN-SIZE ADJUSTMENTS */
 
+/* - change item-price positioning - */
+@media(max-width: 1100px){
+	.item span {
+		float: none;
+		display: block;
+		margin-top: 5px;
+	}
+}
 
+/* - minor adjustments - */
+@media (max-width: 910px){
+	#contentAS{
+		width: 85%;
+	}
 
+	.content:nth-child(2){
+		margin-top: 100px;
+	}
+}
 
+/* - change submenu to hamburger format + stack menu columns - */
+@media (max-width: 738px){
 
+	.suboptions.menu {
+		margin-bottom: 0px;
+		line-height: 1.0;
+	}
 
+	.suboptions.menu ul {
+		display: block;
+		height: 0;
+		opacity: 0;
+		text-align: center;
+		transition: all 0.75s ease-in-out;
+		width: 85%;
+		visibility: hidden;
+	}
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+	.suboptions.menu li {
+		display: block;
+		border: 1px solid #AAAAAA;
+		font-size: 18px;
+		padding: 25px;
+	}
 
+	#menu-toggle:checked ~ ul {
+		opacity: 1;
+		height: 570px;
+		visibility: visible;
+	}
+
+	.label-toggle {
+		display: block;
+		margin: 0px auto;
+		border: 4px double #FFAF35;
+		border-radius: 10px;
+		padding: 5px;
+		height: 60px;
+		width: 60px;
+		cursor: pointer;
+		background-image: url('../../res/icons/svg/021-menu-1.svg');
+		background-size: 40px;
+		background-repeat: no-repeat;
+		background-color: white;
+		background-position: 50%;
+		transition: all 0.15s ease-in-out;
+	}
+
+	.menu.title {
+		margin-top: 40px;
+		margin-bottom: 70px;
+	}
+
+	/***************************************************/
+	.column:nth-child(2n){
+		float: none;
+	}
+
+	.column {
+		display: block;
+		margin: auto;
+		width: 85%;
+	}
+
+	.item.last {
+		border-bottom: 1px solid #CCCCCC;
+	}
+
+	.item.last:last-child{
+		border-bottom: none;
+	}
+}
