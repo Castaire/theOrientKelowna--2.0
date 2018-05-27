@@ -7,23 +7,19 @@
 
 	<link href="menustyles.css" rel="stylesheet" type="text/css">
 	<link href="../styles.css" rel="stylesheet" type="text/css">
-	<script src="loose-scripts.js"></script>
 	<title>THE ORIENT</title>
 </head>
 <body>
 	<div class="menu-nav">
-		<div class="nav-item nav-icon" style="margin-left: 25px;">
-			<a href="../index.html" style="background-image: url('../../res/icons/svg/005-restaurant.svg')">
+		<div class="nav-item">
+			<a class="nav-icon" href="../index.html"
+				style="background-image: url('../../res/icons/svg/005-restaurant.svg')">
 			</a>
-		</div>
-		<div class="nav-item" style="margin-left: 2px;">
 			<a href="../index.html"><p> HOME </p></a>
 		</div>
-		<div class="nav-item nav-icon" style="margin-left: 15px;">
-			<a href="../contact.html" style="background-image: url('../../res/icons/svg/003-phone-with-message.svg')">
+		<div class="nav-item">
+			<a class="nav-icon" href="../contact.html" style="background-image: url('../../res/icons/svg/003-phone-with-message.svg')">
 			</a>
-		</div>
-		<div class="nav-item" style="margin-left: 0px;">
 			<p class="phone">
 				<a href="tel:+1-250-763-2988">250-763-2988</a> &nbsp;//&nbsp; <a href="tel:+1-250-763-2986">250-763-2986</a>
 			</p>
@@ -42,6 +38,8 @@
 		</ul>
 	</div>
 	<div class="suboptions menu" style="margin-top: 45px;">
+		<input type="checkbox" id="menu-toggle" />
+			<label for="menu-toggle" class="label-toggle"></label>
 		<ul>
 			<a href="appetizers+soup.html">
 				<li> APPETIZERS + SOUP </li></a>
@@ -57,7 +55,7 @@
 				<li> SIDES + SAUCES </li></a>
 		</ul>
 	</div>
-	<div id="contentAS" style="margin-top: 130px;">
+	<div class="combo contentAS">
 		<section class="content">
 			<h1> LUNCH SPECIAL </h1>
 			<div class="column">
@@ -77,31 +75,24 @@
 						ADD &nbsp; [ 1 ]&nbsp; POP <span>+ $1.00</span>
 					</p>
 				</div>
-				<div class="combo item" style="padding-bottom: 20px; border:none;">
+				<div class="combo item">
 					<ul>
-						<li><p> &nbsp;ALMOND GAI DING&nbsp; </p></li>
-						<li><p> &nbsp;BEEF CHOW BROCOLLI&nbsp; </p></li>
-						<li><p> &nbsp;KUNG PO CHICKEN or PRAWNS { HOT }&nbsp; </p></li>
-						<li>
-							<p> &nbsp;CHICKEN or PRAWNS with CASHEW NUTS&nbsp; </p>
+						<li> &nbsp;ALMOND GAI DING&nbsp; </li>
+						<li> &nbsp;BEEF CHOW BROCOLLI&nbsp; </li>
+						<li> &nbsp;KUNG PO CHICKEN or PRAWNS&nbsp; (hot)</li>
+						<li> &nbsp;CHICKEN or PRAWNS with CASHEW NUTS&nbsp; </li>
+						<li> &nbsp;CHICKEN or PRAWNS in BLACK BEAN SAUCE&nbsp; </li>
+						<li> &nbsp;GINGER BEEF or CHICKEN&nbsp; </li>
+						<li> &nbsp;CHICKEN or PRAWNS in CURRY SAUCE&nbsp; </li>
+						<li> &nbsp;MONGOLIAN BEEF&nbsp; (hot)</li>
+						<li> 
+							&nbsp;STIR-FRIED BEEF or CHICKEN with GINGER and ONIONS&nbsp; 
 						</li>
-						<li>
-							<p> &nbsp;CHICKEN or PRAWNS in BLACK BEAN SAUCE&nbsp; </p>
-						</li>
-						<li><p> &nbsp;GINGER BEEF or CHICKEN&nbsp; </p></li>
-						<li>
-							<p> &nbsp;CHICKEN or PRAWNS in CURRY SAUCE { HOT }&nbsp; </p>
-						</li>
-						<li><p> &nbsp;MONGOLIAN BEEF { HOT }&nbsp; </p></li>
-						<li>
-							<p> &nbsp;STIR-FRIED BEEF or CHICKEN with GINGER and ONIONS&nbsp; </p>
-						</li>
-						<li><p> &nbsp;SZECHUAN CHICKEN or PRAWNS {HOT}&nbsp; </p></li>
+						<li> &nbsp;SZECHUAN CHICKEN or PRAWNS&nbsp; (hot)</li>
 					</ul>
 				</div>
 			</div>
-
-			<div class="column" style="float: right;">
+			<div class="column">
 				<div class="item" style="padding-bottom: 10px;">
 					<p>CHOOSE &nbsp;[ 2 ]&nbsp; ITEMS BELOW <span>$7.95</span></p>
 					<p>CHOOSE &nbsp;[ 3 ]&nbsp; ITEMS BELOW <span>$9.95</span></p>
@@ -118,17 +109,15 @@
 				</div>
 				<div class="combo item" style="padding-bottom: 20px; border:none;">
 					<ul>
-						<li><p> &nbsp;ALMOND CHICKEN&nbsp; </p></li>
-						<li><p> &nbsp;BEEF CHOP SUEY&nbsp; </p></li>
-						<li><p> &nbsp;CHICKEN CHOW MEIN&nbsp; </p></li>
-						<li><p> &nbsp;CHICKEN FRIED RICE&nbsp; </p></li>
-						<li><p> &nbsp;DEEP FRIED PRAWNS&nbsp; </p></li>
-						<li><p> &nbsp;DRY GARLIC SPARERIBS&nbsp; </p></li>
-						<li><p> &nbsp;EGG FOO YUNG&nbsp; </p></li>
-						<li><p> &nbsp;SWEET &amp; SOUR PORK&nbsp; </p></li>
-						<li><p> &nbsp;SWEET &amp; SOUR CHICKEN BALLS&nbsp; </p></li>
-						<!-- HACK: to align dashed boxes, ufufufufu -->
-						<li><p>&nbsp;</p></li>
+						<li> &nbsp;ALMOND CHICKEN&nbsp; </li>
+						<li> &nbsp;BEEF CHOP SUEY&nbsp; </li>
+						<li> &nbsp;CHICKEN CHOW MEIN&nbsp; </li>
+						<li> &nbsp;CHICKEN FRIED RICE&nbsp; </li>
+						<li> &nbsp;DEEP FRIED PRAWNS&nbsp; </li>
+						<li> &nbsp;DRY GARLIC SPARERIBS&nbsp; </li>
+						<li> &nbsp;EGG FOO YUNG&nbsp; </li>
+						<li> &nbsp;SWEET &amp; SOUR PORK&nbsp; </li>
+						<li> &nbsp;SWEET &amp; SOUR CHICKEN BALLS&nbsp; </li>
 					</ul>
 				</div>
 			</div>

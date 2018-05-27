@@ -81,29 +81,10 @@ a.nav-icon {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-#contentAS {
+.contentAS {
 	width: 80%;
 	margin: 50px auto;
 	font-family: 'Julius Sans One', sans-serif;
-}
-
-/* only for COMBOS and FAMILY DINNER menus */
-p#etc {
-	margin: 50px auto 0px auto;
-	padding: 5px 10px;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
-}
-
-.column {
-	display: inline-block;
-	width: 45%;
-	vertical-align: top;
-}
-
-.column:nth-child(2n){
-	margin-right: 90px;
 }
 
 .content {
@@ -121,6 +102,16 @@ p#etc {
 	border-bottom: 1px solid #FFAF35;
 	letter-spacing: 0.4em;
 	font-size: 35px;
+}
+
+.column {
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+}
+
+.column:nth-child(3){
+	float: right;
 }
 
 .item {
@@ -151,15 +142,6 @@ p#etc {
 	float: right;
 }
 
-.item ul {
-	text-align: center;
-	list-style: none;
-	background-color: white;
-	margin-top: 30px;
-	padding: 25px 0px;
-	border: 10px dashed #EEEEEE;
-}
-
 .item li {
 	line-height: 1.8;
 }
@@ -168,17 +150,63 @@ p#etc {
 	border-bottom: none;
 }
 
-/* only for COMBO menu */
-p.combo {
-	line-height: 1.2;
-}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.combo.item p {
-	line-height: 2.0;
+/* only for COMBOS and FAMILY DINNER menus */
+p#etc {
+	margin: 50px auto 0px auto;
+	padding: 5px 10px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
 }
 
 /* only for FAMILY DINNER menu */
 p.family.desc{
+	line-height: 1.8;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* only for COMBO menu */
+
+.combo.contentAS{
+	width: 90%;
+}
+
+p.combo {
+	line-height: 1.2;
+}
+
+.combo.item {
+	padding-bottom: 20px;
+	border: none;
+}
+
+.combo.item ul {
+	text-align: center;
+	list-style: none;
+	background-color: white;
+	margin-top: 30px;
+	padding: 25px 0px;
+	border: 10px dashed #EEEEEE;
+}
+
+.combo.item li {
+	overflow-wrap: break-word;
+	font-family: 'Oswald', sans-serif;
+	line-height: 2.0;
+	margin: 10px;
+}
+
+.combo.item p {
+	border: 1px solid black;
+	line-height: 2.0;
+}
+
+
+p.combo span {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
 	line-height: 1.8;
 }
 
@@ -279,12 +307,14 @@ SCREEN-SIZE ADJUSTMENTS */
 		border-bottom: none;
 	}
 
-	.column:nth-child(2n) .last.item {
+	/* left column*/
+	.column:nth-child(2) .last.item {
 		border-bottom: 1px solid #DDDDDD;
 	}
 
-	.column:nth-child(2n){
-		margin-right: 20px;
+	/* right column */
+	.column:nth-child(3){
+		float: none;
 	}
 
 	/* used to separate TWO (and only TWO) menu items */
@@ -293,6 +323,8 @@ SCREEN-SIZE ADJUSTMENTS */
 	}
 
 	/***************************************************/
+
+
 }
 
 /* - minor adjustments - reformat top nav-bar - */
@@ -320,5 +352,15 @@ SCREEN-SIZE ADJUSTMENTS */
 
 	.nav-item p {
 		line-height: 20px;
+	}
+
+	/***************************************************/
+
+	.combo.contentAS {
+		width: 90%;
+	}
+
+	.combo.contentAS li {
+		margin: 15px;
 	}
 }
