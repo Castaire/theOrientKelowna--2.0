@@ -275,7 +275,7 @@ SCREEN-SIZE ADJUSTMENTS */
 		height: 60px;
 		width: 60px;
 		cursor: pointer;
-		background-image: url('../../res/icons/svg/021-menu-1.svg');
+		background-image: url('../res/icons/svg/021-menu-1.svg');
 		background-size: 40px;
 		background-repeat: no-repeat;
 		background-color: white;

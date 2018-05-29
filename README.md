@@ -8,6 +8,4 @@ http://www.theorientkelowna.com/
 
 ## Materials
 - HTML / CSS
-- JavaScript (eventually!)
-- Bootstrap (possibly)
-- Node.js (not really necessary, but just in case XD)
+- JavaScript (minimal, for now!)

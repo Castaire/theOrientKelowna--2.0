@@ -219,7 +219,7 @@ a#contact-icon {
 	margin: 20px auto;
 	height: 60px;
 	width: 60px;
-	background-image: url('../res/icons/svg/012-location.svg');
+	background-image: url('res/icons/svg/012-location.svg');
 	background-size: 60px;
 	background-repeat: no-repeat;
 }
