@@ -307,6 +307,10 @@ SCREEN-SIZE ADJUSTMENTS */
 		border-bottom: none;
 	}
 
+	.family.last.item {
+		border-bottom: 1px solid #DDDDDD;
+	}
+
 	/* left column*/
 	.column:nth-child(2) .last.item {
 		border-bottom: 1px solid #DDDDDD;
