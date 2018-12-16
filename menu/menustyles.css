@@ -312,7 +312,7 @@ SCREEN-SIZE ADJUSTMENTS */
 	}
 
 	/* left column*/
-	.column:nth-child(2) .last.item {
+	.column:nth-child(2).last.item {
 		border-bottom: 1px solid #DDDDDD;
 	}
 
