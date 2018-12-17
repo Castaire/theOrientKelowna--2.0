@@ -12,6 +12,7 @@ body {
 	letter-spacing: 0.05em;
 }
 
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* MAIN TITLE */
 
@@ -49,7 +50,7 @@ body {
 .menu li {
 	display: inline;
 	font-family: 'Oswald', sans-serif;
-	font-size: 20px;
+	font-size: 23px;
 	margin: 20px;
 }
 
@@ -249,7 +250,7 @@ a#contact-icon {
 
 .finalnote p {
 	color: #818181;
-	font-size: 12px;
+	font-size: 10px;
 }
 
 .finalnote a:link a:visited a:hover {
@@ -294,6 +295,7 @@ a#contact-icon {
 	background-color: #EEEEEE;
 	border: 10px double white;
 	line-height: 1.7;
+	font-size: 14px;
 }
 
 .forminfo .title {
@@ -342,7 +344,7 @@ form {
 }
 
 
-/*_________________________________________________
+/*_______________________________________________________________________________________
 SCREEN-SIZE ADJUSTMENTS */
 
 /* intermediate screen size */
@@ -351,6 +353,14 @@ SCREEN-SIZE ADJUSTMENTS */
 	/* 
 	-- INDEX PAGE ---------------------------------
 	*/
+
+	#main p {
+		font-size: 14px;
+	}
+
+	#main h1 {
+		font-size: 100px;
+	}
 
 	.menu {
 		line-height: 2.5;
@@ -393,10 +403,6 @@ SCREEN-SIZE ADJUSTMENTS */
 
 	.info {
 		padding: 30px 60px;
-	}
-
-	.finalnote p {
-		font-size: 10px;
 	}
 
 	/* 
@@ -476,7 +482,7 @@ SCREEN-SIZE ADJUSTMENTS */
 		border: none;
 		border-top: 1px solid #FFAF35;
 		border-bottom: 1px solid #FFAF35;
-	}
+	} 
 
 	.finalnote p {
 		padding: 0px 10px;
