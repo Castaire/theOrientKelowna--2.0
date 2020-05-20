@@ -12,7 +12,6 @@ body {
 	letter-spacing: 0.05em;
 }
 
-
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* MAIN TITLE */
 
@@ -107,7 +106,7 @@ body {
 	margin: 20px;
 	padding: 0px 15px;
 	font-size: 14px;
-	line-height: 1.7;
+	line-height: 1.5;
 }
 
 
@@ -280,6 +279,29 @@ a#contact-icon {
 	top: 5%;
 	height: 90%;
 	width: 94%;
+}
+
+/* ________________________________________________
+------------------
+-- UPDATES PAGE  --
+------------------
+*/
+
+#updates {
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto 30px auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.update-card {
+	width: 500px;
+	border: 2px dashed #FFAF35;
+	border-radius: 20px;
+	padding: 15px 25px;
+	margin-bottom: 30px;
+	line-height: 1.7;
 }
 
 /* ________________________________________________
