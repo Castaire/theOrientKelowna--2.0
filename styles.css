@@ -67,10 +67,11 @@ body {
 /* INTRO SECTION */
 
 #intro {
-	margin: 60px auto;
+	margin: 60px auto 45px auto;
 	width: 75%;
 	color: #333333;
 	line-height: 1.3;
+	word-wrap: normal;
 }
 
 #intro span{
@@ -106,7 +107,7 @@ body {
 	margin: 20px;
 	padding: 0px 15px;
 	font-size: 14px;
-	line-height: 1.5;
+	line-height: 2.0;
 }
 
 
@@ -388,9 +389,8 @@ SCREEN-SIZE ADJUSTMENTS */
 		line-height: 2.5;
 	}
 
-
-	#intro span{
-		display: none;
+	#intro {
+		margin-top: 30px;
 	}
 
 	#aboutus {
@@ -461,6 +461,13 @@ SCREEN-SIZE ADJUSTMENTS */
 
 }
 
+/* visual separation for multi-line nav bar*/
+@media (max-width: 655px){
+	.menu {
+		border-top: 2px solid #EEEEEE;
+		border-bottom: 2px solid #EEEEEE;
+	}
+}
 
 /* small screen size */
 @media (max-width: 518px){
@@ -478,7 +485,7 @@ SCREEN-SIZE ADJUSTMENTS */
 	}
 
 	#intro {
-		margin-top: 55px;
+		margin-top: 30px;
 	}
 
 	#intro h1 {
