@@ -461,9 +461,9 @@ SCREEN-SIZE ADJUSTMENTS */
 
 }
 
-/* visual separation for multi-line nav bar*/
+/* visual separation for multi-line nav bar on regular pages*/
 @media (max-width: 655px){
-	.menu {
+	#regularmenu {
 		border-top: 2px solid #EEEEEE;
 		border-bottom: 2px solid #EEEEEE;
 	}
