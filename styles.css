@@ -463,10 +463,23 @@ SCREEN-SIZE ADJUSTMENTS */
 
 /* visual separation for multi-line nav bar on regular pages*/
 @media (max-width: 655px){
+
 	#regularmenu {
 		border-top: 2px solid #EEEEEE;
 		border-bottom: 2px solid #EEEEEE;
 	}
+
+	.footer.menu {
+		border: none;
+		border-top: 1px solid #FFAF35;
+		border-bottom: 1px solid #FFAF35;
+	}
+
+	.update-card {
+		width: 75%;
+	}
+
+	
 }
 
 /* small screen size */
@@ -508,9 +521,6 @@ SCREEN-SIZE ADJUSTMENTS */
 
 	.footer.menu {
 		padding-top: 20px;
-		border: none;
-		border-top: 1px solid #FFAF35;
-		border-bottom: 1px solid #FFAF35;
 	} 
 
 	.finalnote p {
