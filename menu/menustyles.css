@@ -40,7 +40,10 @@ a.nav-icon {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .suboptions.menu {
+	max-width: 1300px;
 	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	line-height: 1.5;
 }
 
@@ -87,6 +90,7 @@ a.nav-icon {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .contentAS {
+	max-width: 1300px;
 	width: 80%;
 	margin: 50px auto;
 	font-family: 'Julius Sans One', sans-serif;

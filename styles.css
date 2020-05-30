@@ -115,6 +115,7 @@ body {
 /* SERVICE CARDS SECTION (lunch, takeout, delivery cards) */
 
 .services {
+	max-width: 1300px;
 	display: flex;
 	margin: 75px auto 60px auto;
 	width: 90%;
@@ -312,6 +313,7 @@ a#contact-icon {
 */
 
 .forminfo {
+	max-width: 900px;
 	margin: 75px auto 25px auto;
 	width: 70%;
 	padding: 15px;
@@ -334,6 +336,7 @@ a#contact-icon {
 
 
 form {
+	max-width: 1300px;
 	margin: 0px auto 30px auto;
 	text-align: center;
 }
@@ -363,6 +366,7 @@ form {
 
 #note-form button {
 	width: 25%;
+	font-size: 12px;
 	padding: 15px 0px;
 }
 
