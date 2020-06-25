@@ -295,11 +295,12 @@ a#contact-icon {
 	margin: 50px auto 30px auto;
 	align-items: center;
 	justify-content: center;
+	font-size: 14px;
 }
 
 .update-card {
 	width: 500px;
-	border: 2px dashed #FFAF35;
+	border: 1px solid #FFAF35;
 	border-radius: 20px;
 	padding: 15px 25px;
 	margin-bottom: 30px;
