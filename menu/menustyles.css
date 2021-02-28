@@ -241,6 +241,11 @@ SCREEN-SIZE ADJUSTMENTS */
 	.content:nth-child(2){
 		margin-top: 100px;
 	}
+
+	/* right-column */
+	.column:nth-child(3){
+		float: none;
+	}
 }
 
 /* - change submenu to hamburger format + stack menu columns - */
@@ -384,5 +389,9 @@ SCREEN-SIZE ADJUSTMENTS */
 
 	.combo.contentAS li {
 		margin: 15px;
+	}
+
+	.column:nth-child(3) {
+		float: none;
 	}
 }
